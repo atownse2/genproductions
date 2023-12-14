@@ -1,0 +1,16 @@
+#MKK - KK bosons mass
+set param_card KKINPUTS 4 {BKK_mass}
+#MBKK - BKK mass and witdh
+set param_card MASS 9000121 {BKK_mass}
+set param_card DECAY 9000121 Auto
+#MR - Radion mass and width
+set param_card MASS 9000025 {Radion_mass}
+set param_card DECAY 9000025 Auto
+#ggrav - KK gravity coupling
+set param_card KKINPUTS 2 6
+#gBKK - coupling for BKK
+set param_card KKINPUTS 1 3
+#epsilon
+set param_card KKINPUTS 2 0.5
+# change dynamical_scale_choice
+set run_card dynamical_scale_choice 1

@@ -1,0 +1,10 @@
+set group_subprocesses Auto
+set ignore_six_quark_processes False
+set loop_optimized_output True
+set complex_mass_scheme False
+
+import model Radion_BKK_UFO
+generate p p > BKK > R A, R > A A
+display processes
+
+output BkkToGRadionToGGG_M1-{BKK_mass}_R0-{Radion_mass} -nojpeg

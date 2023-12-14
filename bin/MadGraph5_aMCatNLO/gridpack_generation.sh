@@ -184,6 +184,13 @@ make_gridpack () {
       rm "$MG"
     
       #############################################
+      #Add UFO copying here:
+      #############################################
+      echo "Copying models to MBGASEDIRORIG = ${MGBASEDIRORIG}"
+      cp -r ~/Public/RSTriPhoton/preprocessing/tools/models/Radion_BKK_UFO  $MGBASEDIRORIG/models
+      cp -r ~/Public/RSTriPhoton/preprocessing/tools/models/Radion_BKK_UFO.zip  $MGBASEDIRORIG/models
+
+      #############################################
       #Apply any necessary patches on top of official release
       #############################################
     
