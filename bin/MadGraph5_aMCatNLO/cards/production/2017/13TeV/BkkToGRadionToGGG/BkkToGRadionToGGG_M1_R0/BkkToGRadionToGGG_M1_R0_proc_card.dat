@@ -5,6 +5,8 @@ set complex_mass_scheme False
 
 import model Radion_BKK_UFO
 generate p p > BKK > R A, R > A A
+add process p p > BKK > R A, R > A A j
+add process p p > BKK > R A, R > A A j j
 display processes
 
 output BkkToGRadionToGGG_M1-{BKK_mass}_R0-{Radion_mass} -nojpeg
